@@ -13,7 +13,7 @@ let package = Package(
         .target(
             name: "SegmentFirebase",
             dependencies: [
-              "Segment",
+              .product(name: "Segment", package: "Segment"),
               .product(name: "FirebaseAnalytics", package: "Firebase"),
             ],
             path: "Segment-Firebase/Classes",
